@@ -47,7 +47,6 @@ class RulesetInflector implements WordInflector
             $inflected = $ruleset->getRegular()->inflect($word);
 
             if ($inflected !== $word) {
-                $flag = 0;
                 return $inflected;
             }
         }
